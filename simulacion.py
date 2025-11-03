@@ -11,7 +11,7 @@ from particula import Particula
 
 def crear_gas(N: int, ancho: float, alto: float, v_media: float) -> List[Particula]:
     """
-    Crea una lista de N partículas con posiciones y velocidades aleatorias. [cite: 36]
+    Crea una lista de N partículas con posiciones y velocidades aleatorias.
 
     Las posiciones se distribuyen uniformemente dentro de la caja [0, ancho] x [0, alto].
     Las velocidades se generan aleatoriamente (distribución normal) con una
@@ -46,7 +46,7 @@ def paso(particulas: List[Particula], dt: float, ancho: float, alto: float):
     """
     Ejecuta un paso de simulación para todas las partículas.
     Actualiza la posición de cada partícula y maneja sus colisiones
-    con las paredes. [cite: 37]
+    con las paredes. 
 
     Args:
         particulas (List[Particula]): La lista de partículas a simular.
@@ -61,7 +61,7 @@ def paso(particulas: List[Particula], dt: float, ancho: float, alto: float):
 def energia_total(particulas: List[Particula]) -> float:
     """
     Calcula la energía cinética total del sistema.
-    Es la suma de las energías cinéticas de todas las partículas. [cite: 38]
+    Es la suma de las energías cinéticas de todas las partículas. 
 
     Args:
         particulas (List[Particula]): La lista de partículas.
@@ -74,8 +74,8 @@ def energia_total(particulas: List[Particula]) -> float:
 def temperatura(particulas: List[Particula], k_B: float = 1.0) -> float:
     """
     Calcula la temperatura efectiva del gas.
-    Se basa en la energía cinética promedio por partícula. [cite: 39]
-    La fórmula es T = E_prom / k_B, donde E_prom = E_total / N. [cite: 40]
+    Se basa en la energía cinética promedio por partícula.
+    La fórmula es T = E_prom / k_B, donde E_prom = E_total / N. 
 
     Args:
         particulas (List[Particula]): La lista de partículas.
