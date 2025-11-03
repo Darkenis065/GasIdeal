@@ -1,7 +1,7 @@
 """
 Módulo graficar.py
 Utiliza matplotlib.animation para generar una visualización dinámica
-del movimiento de las partículas del gas ideal. [cite: 62]
+del movimiento de las partículas del gas ideal. 
 """
 
 import matplotlib.pyplot as plt
