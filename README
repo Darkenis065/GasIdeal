@@ -4,3 +4,13 @@ trabajo presentado para el curso de desarollo de software realizado por:
 -Juan Esteban Neira.
 -Jose Luis Zamora.
 
+INSTRUCCIONES DE EJECUCIÓN:
+Los modulos a ejecutar son:
+-test_gas.py
+-graficar.py
+test_gas.py debe ser ejecutado usando:
+python -m unittest test_gas.py -v
+mientras que graficar.py se ejecturará normalmente con python3, al ejecutarse 
+se desplegará un menú que permitira variar los parametros de la simulación. La
+ventana emergente de mathplotlib debera cerrarse para terminar la simulación.
+
