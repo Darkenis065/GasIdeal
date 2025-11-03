@@ -10,7 +10,7 @@ class Particula:
     Representa una partícula puntual con propiedades físicas.
 
     El modelo asume que las partículas no interactúan entre sí, solo
-    colisionan elásticamente con las paredes del contenedor. [cite: 13, 14]
+    colisionan elásticamente con las paredes del contenedor.
 
     Atributos:
         posicion (np.ndarray): Arreglo de numpy de 2D [x, y] con la posición.
@@ -36,7 +36,7 @@ class Particula:
     def mover(self, dt: float):
         """
         Actualiza la posición de la partícula usando un paso de tiempo dt.
-        Utiliza la ecuación de movimiento libre: r(t+dt) = r(t) + v(t)*dt. [cite: 18, 27]
+        Utiliza la ecuación de movimiento libre: r(t+dt) = r(t) + v(t)*dt.
 
         Args:
             dt (float): El incremento de tiempo para la actualización.
@@ -47,7 +47,7 @@ class Particula:
         """
         Verifica y maneja colisiones elásticas con las paredes del contenedor.
         Si la partícula colisiona, invierte la componente de velocidad
-        correspondiente. [cite: 28]
+        correspondiente.
 
         Args:
             ancho (float): El ancho (límite en x) del contenedor.
@@ -72,7 +72,7 @@ class Particula:
     def energia_cinetica(self) -> float:
         """
         Calcula y retorna la energía cinética de la partícula.
-        La fórmula es E_k = 0.5 * m * |v|^2. [cite: 29]
+        La fórmula es E_k = 0.5 * m * |v|^2.
 
         Returns:
             float: La energía cinética (0.5 * m * (vx^2 + vy^2)).
